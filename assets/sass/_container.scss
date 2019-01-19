@@ -1,0 +1,12 @@
+.container {
+	margin: auto;
+	padding: 0 1em;
+}
+
+@each $key, $value in $breakpoints {
+	@media (min-width: map-get($value, screen)) {
+		.container {
+			max-width: map-get($value, grid);
+		}
+	}
+}

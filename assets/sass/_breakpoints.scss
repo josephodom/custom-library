@@ -1,0 +1,22 @@
+$breakpoints: (
+	mobile: (
+		screen: 576px,
+		grid: 540px,
+	),
+	tablet: (
+		screen: 768px,
+		grid: 720px,
+	),
+	small: (
+		screen: 992px,
+		grid: 960px,
+	),
+	large: (
+		screen: 1200px,
+		grid: 1140px,
+	),
+	x-large: (
+		screen: 1504px,
+		grid: 1440px,
+	),
+);
