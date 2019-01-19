@@ -1,0 +1,7 @@
+@each $color, $colorMap in $colors {
+	@each $shade, $value in $colorMap {
+		.text-#{$color}-#{$shade} {
+			color: #{$value};
+		}
+	}
+}

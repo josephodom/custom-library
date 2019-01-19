@@ -1,11 +1,16 @@
 // VARIABLES
 
 @import 'breakpoints';
+@import 'colors';
+@import 'display-types';
 
 // RULES
 
 @import 'box';
 @import 'container';
+@import 'display';
 @import 'flex-table';
 @import 'reset';
+@import 'sections';
 @import 'structure';
+@import 'text';

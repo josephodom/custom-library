@@ -26,7 +26,7 @@ function cells(){
 			continue;
 		}
 		
-		?><div class="cell-<?=$cell?>">
+		?><div class="cell-<?=$cell?> display-none display-block-large">
 			<div class="box-simple">
 				<?=$cell?> / 12
 			</div>

@@ -3,9 +3,28 @@
 		padding: 0 1em;
 	}
 	
-	@for $i from 1 through 12 {
-		.cell-#{$i} {
-			width: calc(((100% / 12) * #{$i}) - 2em);
+	// Initialized $minWidth here at 0px
+	// We'll overwrite it at the end of each cycle with the exclusive top screen width from each breakpoint
+	$minWidth: 0px;
+	@each $breakpoint, $breakpointMap in $breakpoints {
+		@for $i from 1 through 12 {
+			$className: $i;
+			
+			@if $breakpoint != 'mobile' {
+				$className: $breakpoint + "-" + $i;
+			}
+			
+			@media (min-width: #{$minWidth}) {
+				.cell-#{$className} {
+					width: calc(((100% / 12) * #{$i}) - 2em);
+				}
+				
+				.offset-#{$className} {
+					margin-left: calc(((100% / 12) * #{$i}));
+				}
+			}
+			
+			$minWidth: map-get($breakpointMap, screen);
 		}
 	}
 	

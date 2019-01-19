@@ -3,10 +3,10 @@
 	padding: 0 1em;
 }
 
-@each $key, $value in $breakpoints {
-	@media (min-width: map-get($value, screen)) {
+@each $breakpoint, $breakpointMap in $breakpoints {
+	@media (min-width: map-get($breakpointMap, screen)) {
 		.container {
-			max-width: map-get($value, grid);
+			max-width: map-get($breakpointMap, grid);
 		}
 	}
 }
