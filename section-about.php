@@ -78,7 +78,7 @@ if(!defined('IN_SITE')){
 		<ul>
 			<li>
 				Allowing <code>.full-screen</code> elements to have "exceptions"; that is, if the element doesn't naturally take up the full
-				screen height, then you can set elements that cut into the extra space to make room for themselves. And example is the hero
+				screen height, then you can set elements that cut into the extra space to make room for themselves. An example is the hero
 				section on this very same web page; notice how the header above it &amp; the callout below it squeeze onto the screen, too
 			</li>
 			
