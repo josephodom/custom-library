@@ -1,0 +1,15 @@
+$flexRules: (
+	align-items: (
+		center,
+		flex-start,
+		flex-end
+	),
+);
+
+@each $rule, $ruleList in $flexRules {
+	@each $ruleValue in $ruleList {
+		.#{$rule}-#{$ruleValue} {
+			#{$rule}: #{$ruleValue};
+		}
+	}
+}

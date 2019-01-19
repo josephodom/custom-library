@@ -4,18 +4,15 @@
 		padding: 0 1em;
 	}
 	
-	// Initialized $minWidth here at 0px
-	// We'll overwrite it at the end of each cycle with the exclusive top screen width from each breakpoint
-	$minWidth: 0px;
 	@each $breakpoint, $breakpointMap in $breakpoints {
 		@for $i from 1 through 12 {
 			$className: $i;
 			
-			@if $breakpoint != 'mobile' {
+			@if $breakpoint != mobile {
 				$className: $breakpoint + "-" + $i;
 			}
 			
-			@media (min-width: #{$minWidth}) {
+			@media (min-width: #{map-get($breakpointMap, screen)}) {
 				.cell-#{$className} {
 					width: calc(((100% / 12) * #{$i}) - 2em);
 				}
@@ -24,8 +21,6 @@
 					margin-left: calc(((100% / 12) * #{$i}));
 				}
 			}
-			
-			$minWidth: map-get($breakpointMap, screen);
 		}
 	}
 	

@@ -1,0 +1,27 @@
+.button {
+	@extend %basic-animation;
+	@extend %subtle-shadow;
+	
+	background-color: transparent;
+	border: 0 solid transparent;
+	color: map-get(map-get($colors, white), normal);
+	display: inline-block;
+	font-weight: bold;
+	padding: 0.5em 1.25em;
+}
+
+.button:hover {
+	@extend %subtle-shadow-hover;
+}
+
+@each $color, $colorMap in $colors {
+	@if map-get($colorMap, normal) and map-get($colorMap, dark) {
+		.button.button-#{$color} {
+			background-color: #{map-get($colorMap, normal)};
+		}
+		
+		.button.button-#{$color}:hover {
+			background-color: #{map-get($colorMap, dark)};
+		}
+	}
+}

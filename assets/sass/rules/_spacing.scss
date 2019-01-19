@@ -1,0 +1,30 @@
+$spacingTypes: (
+	margin,
+	padding
+);
+
+@each $spacingType in $spacingTypes {
+	@each $breakpoint, $breakpointMap in $breakpoints {
+		$responsiveSize: "-" + $breakpoint;
+		
+		@if $breakpoint == mobile {
+			$responsiveSize: "";
+		}
+		
+		@media (min-width: #{map-get($breakpointMap, screen)}) {
+			@each $size, $value in $abstractSizes {
+				.#{$spacingType}-#{$size}#{$responsiveSize} {
+					#{$spacingType}: calc(#{$value} * 2) !important;
+				}
+				
+				@each $direction, $directionMap in $directions {
+					.#{$spacingType}-#{$direction}-#{$size}#{$responsiveSize} {
+						@each $directionValue in $directionMap {
+							#{$spacingType}-#{$directionValue}: calc(#{$value} * 2) !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

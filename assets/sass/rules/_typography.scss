@@ -1,0 +1,10 @@
+body,
+button,
+input,
+select,
+textarea
+{
+	color: map-get(map-get($colors, black), light);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 20px;
+}

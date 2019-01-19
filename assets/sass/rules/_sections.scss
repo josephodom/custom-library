@@ -2,6 +2,14 @@
 	@each $shade, $value in $colorMap {
 		.bg-#{$color}-#{$shade} {
 			background-color: #{$value};
+			
+			@if $color != white {
+				color: map-get(map-get($colors, white), normal);
+			}
 		}
 	}
+}
+
+.subtle-shadow {
+	@extend %subtle-shadow;
 }

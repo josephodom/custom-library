@@ -1,20 +1,26 @@
 // VARIABLES
 
-@import 'abstract-sizes';
-@import 'breakpoints';
-@import 'colors';
-@import 'display-types';
+@import 'variables/abstract-sizes';
+@import 'variables/breakpoints';
+@import 'variables/colors';
+@import 'variables/directions';
+@import 'variables/display-types';
 
 // RULES
 
-@import 'box';
-@import 'container';
-@import 'display';
-@import 'fields';
-@import 'flex-table';
-@import 'reset';
-@import 'sections';
-@import 'spacing';
-@import 'structure';
-@import 'text';
-@import 'typography';
+@import 'rules/box';
+@import 'rules/buttons';
+@import 'rules/container';
+@import 'rules/display';
+@import 'rules/fields';
+@import 'rules/flex';
+@import 'rules/flex-table';
+@import 'rules/footer';
+@import 'rules/mixins';
+@import 'rules/reset';
+@import 'rules/sections';
+@import 'rules/spacing';
+@import 'rules/structure';
+@import 'rules/stick';
+@import 'rules/text';
+@import 'rules/typography';

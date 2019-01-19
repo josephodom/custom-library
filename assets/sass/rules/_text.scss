@@ -1,0 +1,45 @@
+@each $size, $value in $abstractSizes {
+	.heading-#{$size} {
+		font-size: calc(1em + #{$value});
+	}
+}
+
+@each $color, $colorMap in $colors {
+	@each $shade, $value in $colorMap {
+		.text-#{$color}-#{$shade} {
+			color: #{$value};
+		}
+	}
+}
+
+$basicTextRules: (
+	text-align: (
+		left,
+		right,
+		center,
+		justify,
+	),
+	
+	text-transform: (
+		uppercase,
+		lowercase,
+	),
+);
+
+@each $rule, $ruleValues in $basicTextRules {
+	@each $breakpoint, $breakpointMap in $breakpoints {
+		@media (min-width: #{map-get($breakpointMap, screen)}) {
+			@each $ruleValue in $ruleValues {
+				$className: $ruleValue;
+				
+				@if $breakpoint != mobile {
+					$className: $className + "-" + $breakpoint;
+				}
+				
+				.text-#{$className} {
+					#{$rule}: #{$ruleValue};
+				}
+			}
+		}
+	}
+}

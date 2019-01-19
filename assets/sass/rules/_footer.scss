@@ -1,0 +1,5 @@
+.default-footer {
+	background-color: map-get(map-get($colors, black), light);
+	color: map-get(map-get($colors, white), darker);
+	padding: 2em 0 3em 0;
+}

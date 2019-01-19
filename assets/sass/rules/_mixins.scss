@@ -1,0 +1,11 @@
+%basic-animation {
+	transition: all 0.25s ease;
+}
+
+%subtle-shadow {
+	box-shadow: 0 2px 4px map-get(map-get($colors, black), transparent);
+}
+
+%subtle-shadow-hover {
+	box-shadow: 0 4px 8px map-get(map-get($colors, black), transparent);
+}

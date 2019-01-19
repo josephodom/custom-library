@@ -1,5 +1,9 @@
 $breakpoints: (
 	mobile: (
+		screen: 0px,
+		grid: 100%,
+	),
+	phablet: (
 		screen: 576px,
 		grid: 540px,
 	),

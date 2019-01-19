@@ -1,18 +1,27 @@
-$minWidth: 0px;
 @each $breakpoint, $breakpointMap in $breakpoints {
 	@each $displayType in $displayTypes {
 		$className: #{$displayType};
 		
-		@if $breakpoint != 'mobile' {
+		@if $breakpoint != mobile {
 			$className: $className + "-" + $breakpoint;
 		}
 		
-		@media (min-width: #{$minWidth}) {
+		@media (min-width: #{map-get($breakpointMap, screen)}) {
 			.display-#{$className} {
 				display: $displayType;
 			}
 		}
 	}
-	
-	$minWidth: map-get($breakpointMap, screen);
+}
+
+body.js {
+	.hide-if-js {
+		display: none;
+	}
+}
+
+body:not(.js) {
+	.display-if-js {
+		display: none;
+	}
 }

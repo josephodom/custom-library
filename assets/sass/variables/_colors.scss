@@ -1,0 +1,55 @@
+$colors: (
+	black: (
+		normal: #000,
+		light: #333,
+		lighter: #555,
+		
+		transparent: rgba(0, 0, 0, 0.25),
+	),
+	
+	blue: (
+		darker: #003725,
+		dark: #0C533C,
+		normal: #226F55,
+		light: #3E8970,
+		lighter: #68A691,
+	),
+	
+	brown: (
+		darker: #521C00,
+		dark: #7D3611,
+		normal: #A65932,
+		light: #CE835E,
+		lighter: #F9BB9C,
+	),
+	
+	gray: (
+		darker: #777,
+		dark: #999,
+		normal: #A5A5A5,
+		light: #CCC,
+		lighter: #DDD,
+	),
+	
+	green: (
+		darker: #525000,
+		dark: #7D7A11,
+		normal: #A6A332,
+		light: #CECB5E,
+		lighter: #F9F69C,
+	),
+	
+	purple: (
+		darker: #210337,
+		dark: #371054,
+		normal: #512770,
+		light: #6C448A,
+		lighter: #8E6DA7,
+	),
+	
+	white: (
+		normal: #FFF,
+		dark: #F5F5F5,
+		darker: #EEE,
+	),
+);
