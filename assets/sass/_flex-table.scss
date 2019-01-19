@@ -1,0 +1,15 @@
+.flex-table {
+	[class*="cell-"] {
+		padding: 0 1em;
+	}
+	
+	@for $i from 1 through 12 {
+		.cell-#{$i} {
+			width: calc(((100% / 12) * #{$i}) - 2em);
+		}
+	}
+	
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1em;
+}

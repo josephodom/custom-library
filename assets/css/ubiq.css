@@ -1,3 +1,13 @@
+.box,
+.box-simple {
+  background-color: #FFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0.5em; }
+
+.box .box-body,
+.box-simple {
+  padding: 0.5em; }
+
 .container {
   margin: auto;
   padding: 0 1em; }
@@ -21,6 +31,37 @@
 @media (min-width: 1504px) {
   .container {
     max-width: 1440px; } }
+
+.flex-table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1em; }
+  .flex-table [class*="cell-"] {
+    padding: 0 1em; }
+  .flex-table .cell-1 {
+    width: calc(((100% / 12) * 1) - 2em); }
+  .flex-table .cell-2 {
+    width: calc(((100% / 12) * 2) - 2em); }
+  .flex-table .cell-3 {
+    width: calc(((100% / 12) * 3) - 2em); }
+  .flex-table .cell-4 {
+    width: calc(((100% / 12) * 4) - 2em); }
+  .flex-table .cell-5 {
+    width: calc(((100% / 12) * 5) - 2em); }
+  .flex-table .cell-6 {
+    width: calc(((100% / 12) * 6) - 2em); }
+  .flex-table .cell-7 {
+    width: calc(((100% / 12) * 7) - 2em); }
+  .flex-table .cell-8 {
+    width: calc(((100% / 12) * 8) - 2em); }
+  .flex-table .cell-9 {
+    width: calc(((100% / 12) * 9) - 2em); }
+  .flex-table .cell-10 {
+    width: calc(((100% / 12) * 10) - 2em); }
+  .flex-table .cell-11 {
+    width: calc(((100% / 12) * 11) - 2em); }
+  .flex-table .cell-12 {
+    width: calc(((100% / 12) * 12) - 2em); }
 
 body,
 html {
