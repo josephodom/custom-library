@@ -1,6 +1,16 @@
-@each $size, $value in $abstractSizes {
-	.heading-#{$size} {
-		font-size: calc(1em + #{$value});
+@each $breakpoint, $breakpointMap in $breakpoints {
+	@each $size, $value in $abstractSizes {
+		$className: $size;
+		
+		@if $breakpoint != mobile {
+			$className: $className + "-" + $breakpoint;
+		}
+		
+		@media (min-width: #{map-get($breakpointMap, screen)}) {
+			.heading-#{$className} {
+				font-size: calc(1em + (#{$value} * 1em));
+			}
+		}
 	}
 }
 

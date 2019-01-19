@@ -4,6 +4,7 @@
 	@extend %subtle-shadow;
 	
 	background-color: #FFF;
+	color: map-get(map-get($colors, black), light);
 	margin-bottom: 0.5em;
 }
 

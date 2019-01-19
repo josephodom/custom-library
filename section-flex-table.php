@@ -8,7 +8,7 @@ if(!defined('IN_SITE')){
 }
 
 ?>
-<section id="flex-table" class="padding-vertical-large">
+<section id="flex-table" class="padding-vertical-large bg-green">
 	<div class="container">
 		<h1 class="heading-medium">
 			Flex Table

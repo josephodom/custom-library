@@ -1,4 +1,4 @@
-<section id="callout" class="padding-vertical-medium-large bg-brown-normal subtle-shadow">
+<section id="callout" class="padding-vertical-large-large bg-brown subtle-shadow">
 	<div class="container">
 		<div class="flex-table align-items-center">
 			<div class="cell-12 cell-large-8 padding-vertical-medium padding-vertical-none-large text-center text-left-large">
@@ -8,7 +8,9 @@
 			</div><!-- .cell -->
 			
 			<div class="cell-12 cell-large-4 padding-vertical-medium padding-vertical-none-large text-center text-right-large">
-				button
+				<a href="#" class="button button-purple">
+					Click Me
+				</a>
 			</div><!-- .cell -->
 		</div><!-- .flex-table -->
 	</div><!-- .container -->

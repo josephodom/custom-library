@@ -1,0 +1,27 @@
+.default-nav {
+	ul {
+		li {
+			a {
+				@extend %basic-animation;
+				
+				color: map-get(map-get($colors, white), normal);
+				display: block;
+				font-weight: bold;
+				padding: 0.5em 1em;
+				text-transform: uppercase;
+			}
+			
+			a:hover {
+				background-color: map-get(map-get($colors, purple), normal);
+			}
+		}
+		
+		align-items: center;
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	background-color: map-get(map-get($colors, purple), dark);
+}

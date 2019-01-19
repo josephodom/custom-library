@@ -82,7 +82,11 @@ if(!defined('IN_SITE')){
 							Submit
 						</button>
 						
-						<button type="submit" class="button button-gray">
+						<button type="button" class="button button-green" disabled>
+							Disabled
+						</button>
+						
+						<button type="reset" class="button button-gray">
 							Reset
 						</button>
 					</div><!-- .cell -->

@@ -1,0 +1,11 @@
+.default-header {
+	> section {
+		padding: 1em 0;
+	}
+	
+	background-color: map-get(map-get($colors, purple), normal);
+	color: map-get(map-get($colors, white), normal);
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}

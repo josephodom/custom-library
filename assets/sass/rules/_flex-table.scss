@@ -1,7 +1,7 @@
 .flex-table {
 	[class*="cell-"] {
 		box-sizing: content-box;
-		padding: 0 1em;
+		padding: 0 0.75em;
 	}
 	
 	@each $breakpoint, $breakpointMap in $breakpoints {
@@ -14,7 +14,7 @@
 			
 			@media (min-width: #{map-get($breakpointMap, screen)}) {
 				.cell-#{$className} {
-					width: calc(((100% / 12) * #{$i}) - 2em);
+					width: calc(((100% / 12) * #{$i}) - 1.5em);
 				}
 				
 				.offset-#{$className} {
@@ -26,5 +26,5 @@
 	
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -1em;
+	margin: 0 -0.75em;
 }

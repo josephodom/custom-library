@@ -5,13 +5,21 @@
 	background-color: transparent;
 	border: 0 solid transparent;
 	color: map-get(map-get($colors, white), normal);
+	cursor: pointer;
 	display: inline-block;
 	font-weight: bold;
+	margin: 0.25em 0;
+	outline-color: transparent;
 	padding: 0.5em 1.25em;
 }
 
 .button:hover {
 	@extend %subtle-shadow-hover;
+}
+
+.button[disabled] {
+	cursor: not-allowed;
+	filter: brightness(0.5) contrast(0.5);
 }
 
 @each $color, $colorMap in $colors {

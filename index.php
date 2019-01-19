@@ -12,6 +12,7 @@ require 'functions.php';
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/css/ubiq.min.css">
+<script type="text/javascript" src="assets/js/ubiq.js"></script>
 <title>Custom Library</title>
 </head>
 
@@ -20,16 +21,30 @@ require 'functions.php';
 <header id="header" class="default-header">
 	<section id="header-main">
 		<div class="container">
-			Header
+			<h1 class="heading-small">
+				Ubiq.css Demo
+			</h1>
 		</div>
 	</section>
 	
-	<nav id="nav">
+	<nav id="nav" class="default-nav">
 		<div class="container">
-			<ul class="">
+			<ul>
 				<li>
 					<a href="#">
 						Top
+					</a>
+				</li>
+				
+				<li>
+					<a href="#flex-table">
+						Flex Table
+					</a>
+				</li>
+				
+				<li>
+					<a href="#forms">
+						Forms
 					</a>
 				</li>
 			</ul>
@@ -41,8 +56,9 @@ require 'functions.php';
 
 <main id="main">
 	<?php
-	include 'section-flex-table.php';
+	include 'section-hero.php';
 	include 'section-callout.php';
+	include 'section-flex-table.php';
 	include 'section-form.php';
 	?>
 </main>
