@@ -15,7 +15,7 @@ if(!defined('IN_SITE')){
 		</h1>
 
 		<div class="box padding-medium">
-			<form>
+			<form id="form">
 				<div class="flex-table">
 					<div class="cell-12">
 						<div class="field-container margin-bottom-medium">
@@ -93,5 +93,13 @@ if(!defined('IN_SITE')){
 				</div>
 			</form>
 		</div>
+		
+		<hr>
 	</div><!-- .container -->
 </section><!-- #form -->
+
+<script type="text/javascript">
+document.getElementById('form').onsubmit = function(){
+	return false;
+}
+</script>

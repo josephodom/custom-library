@@ -1,0 +1,5 @@
+hr {
+	border: 0 solid map-get(map-get($colors, gray), lighter);
+	border-top-width: 0.25em;
+	margin: 4em 0;
+}

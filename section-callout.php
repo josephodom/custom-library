@@ -1,3 +1,13 @@
+<?php
+
+// Kick people out if they come here
+// index.php defines this constant before including me
+if(!defined('IN_SITE')){
+	header('Location: index.php');
+	die();
+}
+
+?>
 <section id="callout" class="padding-vertical-large-large bg-brown subtle-shadow">
 	<div class="container">
 		<div class="flex-table align-items-center">

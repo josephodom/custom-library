@@ -648,6 +648,11 @@ body:not(.js) .display-if-js {
   .default-header > section {
     padding: 1em 0; }
 
+hr {
+  border: 0 solid #DDD;
+  border-top-width: 0.25em;
+  margin: 4em 0; }
+
 a,
 a:hover,
 a:focus,
@@ -678,7 +683,8 @@ a:active {
       font-weight: bold;
       padding: 0.5em 1em;
       text-transform: uppercase; }
-    .default-nav ul li a:hover {
+    .default-nav ul li a:hover,
+    .default-nav ul li a.active {
       background-color: #512770; }
 
 * {

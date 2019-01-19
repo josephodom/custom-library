@@ -11,7 +11,9 @@
 				text-transform: uppercase;
 			}
 			
-			a:hover {
+			a:hover,
+			a.active
+			{
 				background-color: map-get(map-get($colors, purple), normal);
 			}
 		}
