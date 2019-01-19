@@ -1,5 +1,6 @@
 .flex-table {
 	[class*="cell-"] {
+		box-sizing: content-box;
 		padding: 0 1em;
 	}
 	

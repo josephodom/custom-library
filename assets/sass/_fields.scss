@@ -1,0 +1,27 @@
+.field-container {
+	.field {
+		option {
+			font-size: inherit;
+		}
+		
+		border: 1px solid map-get(map-get($colors, gray), normal);
+		display: block;
+		font-size: 0.8em;
+		padding: 0.5em;
+		width: 100%;
+	}
+	
+	.field:focus {
+		outline-width: 0;
+	}
+	
+	.field-title {
+		font-size: 1em;
+		font-weight: bold;
+		margin: 0 0 0.25em 0;
+	}
+}
+
+.field-container:not(:last-of-type) {
+	margin-bottom: 1em;
+}

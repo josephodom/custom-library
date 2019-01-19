@@ -1,3 +1,9 @@
+@each $size, $value in $abstractSizes {
+	.heading-#{$size} {
+		font-size: calc(1em + #{$value});
+	}
+}
+
 @each $color, $colorMap in $colors {
 	@each $shade, $value in $colorMap {
 		.text-#{$color}-#{$shade} {

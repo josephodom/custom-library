@@ -1,0 +1,9 @@
+@each $size, $value in $abstractSizes {
+	.margin-#{$size} {
+		margin: #{$value};
+	}
+	
+	.padding-#{$size} {
+		padding: #{$value};
+	}
+}
