@@ -37,4 +37,33 @@ function cells(){
 	return ob_get_clean();
 }
 
+function convertFileSize($size){
+	if(!($size = intval($size))){
+		return 0;
+	}
+	
+	$suffixes = [
+		'',
+		'K',
+		'M',
+		'G',
+		'T',
+	];
+	$suffixIndex = 0;
+	
+	$denom = 1024;
+	
+	while($size > $denom){
+		$size /= $denom;
+		
+		$suffixIndex++;
+	}
+	
+	$size *= 10;
+	$size = round($size);
+	$size /= 10;
+	
+	return $size . ' ' . $suffixes[$suffixIndex] . 'B';
+}
+
 ?>

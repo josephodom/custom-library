@@ -20,8 +20,8 @@ if(!defined('IN_SITE')){
 			</h2>
 			
 			<div>
-				<a href="download.zip" class="button button-purple heading-small" target="_blank">
-					Download
+				<a href="ubiq.zip" class="button button-purple heading-small" target="_blank">
+					Download (<?=convertFileSize(filesize('./ubiq.zip'))?>)
 				</a>
 			</div>
 		</div><!-- .padding-vertical -->

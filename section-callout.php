@@ -18,9 +18,9 @@ if(!defined('IN_SITE')){
 			</div><!-- .cell -->
 			
 			<div class="cell-12 cell-large-4 padding-vertical-medium padding-vertical-none-large text-center text-right-large">
-				<a href="#" class="button button-purple">
+				<button type="button" class="button button-purple">
 					Click Me
-				</a>
+				</button>
 			</div><!-- .cell -->
 		</div><!-- .flex-table -->
 	</div><!-- .container -->
