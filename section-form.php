@@ -15,25 +15,29 @@ if(!defined('IN_SITE')){
 		</h1>
 
 		<div class="box padding-medium">
+			<p class="text-purple-light">
+				<strong>Hello!</strong> This is an example form. Try filling it out, it doesn't actually go anywhere.
+			</p>
+			
 			<form id="form">
 				<div class="flex-table">
 					<div class="cell-12">
 						<div class="field-container margin-bottom-medium">
 							<h2 class="field-title">
-								Your Name
+								Your Name*
 							</h2>
 							
-							<input type="text" name="your-name" class="field" placeholder="Your Name">
+							<input type="text" name="your-name" class="field" placeholder="Your Name" required>
 						</div><!-- .field-container --->
 					</div><!-- .cell -->
 					
 					<div class="cell-12">
 						<div class="field-container margin-bottom-medium">
 							<h2 class="field-title">
-								Your Email
+								Your Email*
 							</h2>
 							
-							<input type="email" name="your-email" class="field" placeholder="Your Email">
+							<input type="email" name="your-email" class="field" placeholder="Your Email" required>
 						</div><!-- .field-container -->
 					</div><!-- .cell -->
 					

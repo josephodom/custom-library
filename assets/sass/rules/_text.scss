@@ -16,7 +16,13 @@
 
 @each $color, $colorMap in $colors {
 	@each $shade, $value in $colorMap {
-		.text-#{$color}-#{$shade} {
+		$className: $color;
+		
+		@if $shade != 'normal' {
+			$className: $className + "-" + $shade;
+		}
+		
+		.text-#{$className} {
 			color: #{$value};
 		}
 	}

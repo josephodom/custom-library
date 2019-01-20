@@ -672,20 +672,27 @@ a:active {
 .default-nav {
   background-color: #371054; }
   .default-nav ul {
-    align-items: center;
     display: flex;
     list-style: none;
     margin: 0;
+    overflow: auto;
     padding: 0; }
     .default-nav ul li a {
       color: #FFF;
       display: block;
       font-weight: bold;
+      height: 100%;
       padding: 0.5em 1em;
-      text-transform: uppercase; }
+      position: relative;
+      text-transform: uppercase;
+      white-space: nowrap; }
     .default-nav ul li a:hover,
     .default-nav ul li a.active {
       background-color: #512770; }
+
+@media (max-width: 575.98px) {
+  .default-nav ul {
+    margin: 0 -1em; } }
 
 * {
   box-sizing: border-box; }
@@ -2400,7 +2407,7 @@ html {
   .heading-xxx-large-x-large {
     font-size: calc(1em + (6 * 1em)); } }
 
-.text-black-normal {
+.text-black {
   color: #000; }
 
 .text-black-light {
@@ -2418,7 +2425,7 @@ html {
 .text-blue-dark {
   color: #0C533C; }
 
-.text-blue-normal {
+.text-blue {
   color: #226F55; }
 
 .text-blue-light {
@@ -2433,7 +2440,7 @@ html {
 .text-brown-dark {
   color: #7D3611; }
 
-.text-brown-normal {
+.text-brown {
   color: #A65932; }
 
 .text-brown-light {
@@ -2448,7 +2455,7 @@ html {
 .text-gray-dark {
   color: #999; }
 
-.text-gray-normal {
+.text-gray {
   color: #A5A5A5; }
 
 .text-gray-light {
@@ -2463,7 +2470,7 @@ html {
 .text-green-dark {
   color: #7D7A11; }
 
-.text-green-normal {
+.text-green {
   color: #A6A332; }
 
 .text-green-light {
@@ -2478,7 +2485,7 @@ html {
 .text-purple-dark {
   color: #371054; }
 
-.text-purple-normal {
+.text-purple {
   color: #512770; }
 
 .text-purple-light {
@@ -2487,7 +2494,7 @@ html {
 .text-purple-lighter {
   color: #8E6DA7; }
 
-.text-white-normal {
+.text-white {
   color: #FFF; }
 
 .text-white-dark {
@@ -2600,5 +2607,8 @@ textarea {
   color: #333;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px; }
+
+p:first-child {
+  margin-top: 0; }
 
 /*# sourceMappingURL=ubiq.css.map */

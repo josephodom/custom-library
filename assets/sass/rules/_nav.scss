@@ -7,8 +7,11 @@
 				color: map-get(map-get($colors, white), normal);
 				display: block;
 				font-weight: bold;
+				height: 100%;
 				padding: 0.5em 1em;
+				position: relative;
 				text-transform: uppercase;
+				white-space: nowrap;
 			}
 			
 			a:hover,
@@ -18,12 +21,20 @@
 			}
 		}
 		
-		align-items: center;
 		display: flex;
 		list-style: none;
 		margin: 0;
+		overflow: auto;
 		padding: 0;
 	}
 	
 	background-color: map-get(map-get($colors, purple), dark);
+}
+
+@media (max-width: 575.98px) {
+	.default-nav {
+		ul {
+			margin: 0 -1em;
+		}
+	}
 }
