@@ -14,7 +14,7 @@ require 'functions.php';
 <link rel="stylesheet" href="assets/css/ubiq.min.css">
 <script type="text/javascript" src="assets/js/stepInterval.js"></script>
 <script type="text/javascript" src="assets/js/ubiq.js"></script>
-<title>Custom Library</title>
+<title>Ubiq.css</title>
 </head>
 
 <body class="bg-white-dark">
@@ -75,7 +75,13 @@ require 'functions.php';
 
 <footer id="footer" class="default-footer">
 	<div class="container">
-		Footer
+		<h2>Example Footer</h2>
+		
+		<p>Example text</p>
+		
+		<hr>
+		
+		<p>&copy; <?=date('Y')?> Joseph Odom
 	</div>
 </footer>
 

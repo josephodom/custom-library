@@ -15,8 +15,9 @@ if(!defined('IN_SITE')){
 		</h1>
 		
 		<p>
-			Ubiq.css (short for Ubiquitous) is a custom, ground-up CSS framework (with a little bit of vanilla JavaScript).
-			You can use it to make robust, response website layouts quickly, as it does a lot of boilerplate for you.
+			Ubiq.css (short for ubiquitous &dash; you can use it everywhere!) is a custom, ground-up CSS framework (with
+			a little bit of vanilla JavaScript). You can use it to make robust, response website layouts quickly, as it
+			does a lot of boilerplate for you.
 		</p>
 		
 		<h2 class="heading-medium">
